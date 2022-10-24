@@ -1,0 +1,29 @@
+{
+  "author": "liusize",
+  "name": "@pxxtech/district",
+  "description": "地区",
+  "license": "MIT",
+  "version": "5.0.0",
+  "scripts": {
+    "update": "node scripts/load-district.js",
+    "build": "pnpm run update & father build"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "sideEffects": [
+    "**/style/*",
+    "*.less"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "lodash": "4.17.21"
+  },
+  "gitHead": "9b236b5b85c4114607291a6ffda38e6788899812"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "5.0.0",
+  "packages": ["packages/*"],
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "includeMergedTags": true
+    },
+    "publish": {
+      "message": ":bookmark:",
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
+}
