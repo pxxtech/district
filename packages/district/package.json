@@ -3,7 +3,7 @@
   "name": "@pxxtech/district",
   "description": "地区",
   "license": "MIT",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "scripts": {
     "update": "node scripts/load-district.js",
     "build": "pnpm run update & father build"
