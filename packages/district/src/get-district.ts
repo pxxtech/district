@@ -1,7 +1,7 @@
 import {districtsObject} from './districts-object';
 import {isEmpty} from 'lodash';
 
-const getDistricts = (adcode?: any) => {
+const getDistrict = (adcode?: any) => {
   if (isEmpty(adcode)) return;
   // 省
   const _province = districtsObject[adcode];
@@ -19,4 +19,4 @@ const getDistricts = (adcode?: any) => {
   }
 }
 
-export default getDistricts;
+export default getDistrict;

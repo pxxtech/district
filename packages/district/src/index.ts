@@ -1,1 +1,1 @@
-export {default as getDistricts} from './get-districts';
+export {default as getDistrict} from './get-district';
