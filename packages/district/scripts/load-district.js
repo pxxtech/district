@@ -9,16 +9,13 @@ const loopSort = (districts) => {
     loopSort(item.districts);
   })
 }
-
-const getObject = (districts) => {
-  if (isEmpty(districts)) return;
-  return districts.reduce((result, item) => {
-    result[item.adcode] = {
-      ...item,
-      districts: getObject(item.districts)
-    };
-    return result;
-  }, {})
+const districtsObject = {};
+const getObject = (districts,) => {
+  districts.forEach((item) => {
+    const {districts, ...rest} = item;
+    districtsObject[item.adcode] = rest;
+    if (!isEmpty(districts)) getObject(districts);
+  })
 }
 
 const main = async () => {
@@ -31,7 +28,7 @@ const main = async () => {
   if (!(info === "OK" && infocode === "10000" && status === "1")) return;
   loopSort(districts[0].districts);
   const districtsArray = districts[0].districts;
-  const districtsObject = getObject(districtsArray);
+  getObject(districtsArray)
   fs.writeFile(
     './src/districts-array.ts',
     `export const districtsArray:any = ${JSON.stringify(districtsArray)}`,
