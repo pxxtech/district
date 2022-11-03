@@ -8,7 +8,7 @@
     "获取省市区县"
   ],
   "license": "MIT",
-  "version": "5.0.10",
+  "version": "5.0.11",
   "scripts": {
     "update": "node scripts/load-district.js",
     "build": "pnpm run update & father build"
