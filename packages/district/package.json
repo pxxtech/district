@@ -15,9 +15,9 @@
   },
   "files": [
     "dist",
-    "package.json",
-    "../../README.md"
+    "package.json"
   ],
+  "readme": "../../README.md",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
@@ -28,7 +28,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
+  "dependencies": {
     "lodash": "4.17.21"
   },
   "gitHead": "fa6a314d94bc4b5119a24336b79bf719151cf255"
