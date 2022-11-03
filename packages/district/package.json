@@ -9,7 +9,7 @@
   ],
   "readme": "README.md",
   "license": "MIT",
-  "version": "5.0.6",
+  "version": "5.0.7",
   "scripts": {
     "update": "node scripts/load-district.js",
     "build": "pnpm run update & father build"
@@ -31,5 +31,5 @@
   "peerDependencies": {
     "lodash": "4.17.21"
   },
-  "gitHead": "9b236b5b85c4114607291a6ffda38e6788899812"
+  "gitHead": "978d42e67c129666c82c8ee51b6d51f25b0e999b"
 }
