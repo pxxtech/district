@@ -7,7 +7,6 @@
     "amap",
     "获取省市区县"
   ],
-  "readme": "README.md",
   "license": "MIT",
   "version": "5.0.7",
   "scripts": {
@@ -16,7 +15,8 @@
   },
   "files": [
     "dist",
-    "package.json"
+    "package.json",
+    "../../README.md"
   ],
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
