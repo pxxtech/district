@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "district",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "dumi dev",
     "build": "lerna run build",
