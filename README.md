@@ -1,4 +1,13 @@
-# district 区域
+# getDistrict 根据adcode查询省市区县
+
+## 安装、使用
+`npm i @pxxtech/district -S`
+
+`import {getDistrict} from '@pxxtech/district';`
+`const {province, city, district} = getDistrict(adcode);`
+
+## 数据源
+https://restapi.amap.com/v3/config/district
 
 ## 行政区划代码（adcode）规则说明
 代码共6位，前两位代表省（一级）、中间两位为市/地区（二级），最后两位为区县（三级）
