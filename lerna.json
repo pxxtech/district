@@ -1,6 +1,8 @@
 {
-  "version": "5.0.8",
-  "packages": ["packages/*"],
+  "version": "5.0.9",
+  "packages": [
+    "packages/*"
+  ],
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "command": {
